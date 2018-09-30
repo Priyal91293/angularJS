@@ -1,0 +1,48 @@
+﻿html, body {
+    height: 100%;
+    background-color: #f5eff3;
+
+
+    input {
+        outline: none;
+        border: none;
+    }
+
+    div {
+        display: block;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    button {
+        outline: none !important;
+        border: none;
+        background: transparent;
+    }
+
+    button {
+        outline: none !important;
+        border: none;
+        background: transparent;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    table, td, th {
+        border: 1px #ddd;
+        text-align: left;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+}

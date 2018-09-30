@@ -1,0 +1,50 @@
+﻿<div ng-controller="DataController">
+    <a href="/">logout</a>
+    <table>
+        <thead>
+            <tr>                
+                <th>tasks</th>              
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="task in tasks.tasks">
+
+
+                <td>
+                    <input type="checkbox" ng-model="task.done"> <span ng-class="{done:task.done}" ng-bind="task.taskName"></span>
+                </td>
+                <td><button ng-click="updateTask(task)">Edit</button></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <button ng-click="add()">Add</button>
+                </td>
+                <td><button ng-click="deleteTasks()">Delete</button></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div ng-hide="!isAdd"  class="login">
+        <form role="form" name="taskForm" class="login-form">
+            <div class="login-title .p-b-26">Add Data</div>
+            <div class="form-group validate-input">
+                <input type="text" name="taskName" class="form-control has-val" ng-model="newTask.taskName" ng-minlength="3" required />
+                <span class="focus-input" data-placeholder="taskName"></span>
+                <span class="alert-validate" ng-show="newTask.taskName.$touched && newTask.taskName.$invalid">The name is required.</span>
+            </div>
+           
+            <input type="hidden" ng-model="newTask.id">
+
+            <div class="container-login-form-btn">
+                <div class="wrap-login-form-btn">
+                    <div class="login-form-bgbtn"></div>
+                    <button class="login-form-btn" type="submit" ng-click="saveTask(newTask)" ng-disabled="taskForm.$invalid">
+                        ADD
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

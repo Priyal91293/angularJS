@@ -1,0 +1,32 @@
+﻿<div ng-controller="LoginController" class="login">
+    <form name="form" ng-submit="login()" role="form" class="login-form">
+        <div class="login-title .p-b-26">Welcome</div>
+
+        <div ng-show="error" class="alert alert-danger">{{error}}</div>
+
+        <div class="form-group">
+            <input type="text" name="username" id="username" class="form-control has-val" ng-model="username" required />
+            <span class="focus-input" data-placeholder="username"></span>
+            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" id="password" class="form-control has-val" ng-model="password" required />
+            <span class="focus-input" data-placeholder="password"></span>
+            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+        </div>
+        <div class="container-login-form-btn">
+            <div class="wrap-login-form-btn">
+                <div class="login-form-bgbtn"></div>
+                <button class="login-form-btn" type="submit" ng-disabled="form.$invalid">
+                    Login
+                </button>
+            </div>
+        </div>
+      
+        <div class="text-center p-t-115">
+            <span class="text1">Username: test</span>
+            <span class="text2">Password: test</span>
+        </div>
+    </form>
+
+</div>

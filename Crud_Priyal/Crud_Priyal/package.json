@@ -1,0 +1,54 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "crud operation demo",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-cookies": "^1.7.5",
+    "angular-mocks": "^1.7.5",
+    "angular-route": "^1.7.5",
+    "angularjs-datepicker": "^2.1.23",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express-server": "^0.5.4",
+    "jasmine-core": "^3.2.1",
+    "lodash": "^4.17.11",
+    "ngstorage": "^0.3.11",
+    "sass": "^1.14.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-sass": "^3.0.1",
+    "karma": "^3.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2",
+    "node-sass": "^4.9.3"
+  },
+  "scripts": {
+    "test": "karma start test/karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyal91293/angularJS.git"
+  },
+  "author": "priyal shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priyal91293/angularJS/issues"
+  },
+  "homepage": "https://github.com/Priyal91293/angularJS#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "pkg"
+  ]
+}
